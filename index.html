@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive JavaScript Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Interactive JS Playground 🎉</h1>
+
+  <!-- Button click event -->
+  <button id="myButton">Click me</button>
+
+  <!-- Hover event -->
+  <div id="hoverElement">Hover over me</div>
+
+  <!-- Long press / Double-click event -->
+  <div id="longPress">Long press or double-click me</div>
+
+  <!-- Button that changes text and color -->
+  <button id="changeButton">Change my text and color</button>
+
+  <!-- Image gallery with slideshow -->
+  
+  <div class="gallery">
+    <img src="images/mydesk1.jpg" alt="Image 1" style="display: block; width: 300px; height: auto;">
+    <img src="images/mydesk2.png" alt="Image 2" style="display: none; width: 300px; height: auto;">
+    <img src="images/mydesk3.jpg" alt="Image 3" style="display: none; width: 300px; height: auto;">
+  </div>
+  
+
+  <button id="next">Next Image</button>
+
+  <!-- Tabs example -->
+  <div class="tabs">
+    <button class="tab" data-target="tab1">Tab 1</button>
+    <button class="tab" data-target="tab2">Tab 2</button>
+    <button class="tab" data-target="tab3">Tab 3</button>
+
+    <div id="tab1" class="tab-content">Frontend engineering focuses on creating the user-facing parts of web applications. It involves using technologies like HTML, CSS, and JavaScript to build interactive, visually appealing, and responsive user interfaces. Frontend engineers work on the layout, structure, and behavior of web pages to ensure that users have a seamless and engaging experience. They also ensure that web applications are optimized for various devices and screen sizes, making them mobile-friendly and accessible.</div>
+    <div id="tab2" class="tab-content" style="display:none;"> A key aspect of frontend engineering is understanding the principles of design and user experience (UX). Engineers must collaborate with designers to bring mockups and wireframes to life while also considering factors like usability, speed, and interactivity. Frontend engineers are often responsible for integrating APIs and ensuring smooth communication between the frontend and backend, allowing dynamic content to be fetched and displayed to the user. They also need to ensure that the application is fast and performs well, which often requires optimizing code, images, and resources.</div>
+    <div id="tab3" class="tab-content" style="display:none;">In addition to core technologies like HTML, CSS, and JavaScript, frontend engineers work with frameworks and libraries such as React, Angular, or Vue.js. These tools help streamline development by providing reusable components and efficient state management. The field also embraces modern workflows, including version control systems like Git, task runners like Webpack, and package managers like npm or Yarn. As frontend engineering continues to evolve, keeping up with new tools, best practices, and performance optimizations is essential for delivering high-quality, scalable web applications.</div>
+  </div>
+
+  <!-- Form validation -->
+  <form id="myForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <br>
+    <label for="password">Password:</label>
+  <input type="password" id="password" placeholder="Enter password" required
+         minlength="8" 
+         pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$" 
+         title="Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, and one number.">
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
